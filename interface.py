@@ -2,14 +2,20 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 import math
 
-# === Настройки ===
-user_input_digit = "\nВведите цифру для выбора пункта меню: "
+print("🔐 Настройка подключения к PostgreSQL")
+db_user = input("Введите имя пользователя: ").strip()
+db_password = input("Введите пароль: ").strip()
+db_name = input("Введите имя БД (по умолчанию itmo_farmers): ").strip() or "itmo_farmers"
+
 DB_CONFIG = {
     "host": "localhost",
-    "database": "itmo_farmers",
-    "user": "postgres",
-    "password": "135Qr680!"
+    "database": db_name,
+    "user": db_user,
+    "password": db_password
 }
+
+# === Настройки ===
+user_input_digit = "\nВведите цифру для выбора пункта меню: "
 
 # === Подключение к БД ===
 def get_connection():

@@ -41,7 +41,7 @@ CREATE TABLE public.farmers_markets (
 );
 
 
-ALTER TABLE public.farmers_markets OWNER TO postgres;
+ALTER TABLE public.farmers_markets OWNER TO CURRENT_USER;
 
 --
 -- Name: farmers_markets_market_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -56,7 +56,7 @@ CREATE SEQUENCE public.farmers_markets_market_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.farmers_markets_market_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.farmers_markets_market_id_seq OWNER TO CURRENT_USER;
 
 --
 -- Name: farmers_markets_market_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -75,7 +75,7 @@ CREATE TABLE public.market_payments (
 );
 
 
-ALTER TABLE public.market_payments OWNER TO postgres;
+ALTER TABLE public.market_payments OWNER TO CURRENT_USER;
 
 --
 -- Name: market_products; Type: TABLE; Schema: public; Owner: postgres
@@ -87,7 +87,7 @@ CREATE TABLE public.market_products (
 );
 
 
-ALTER TABLE public.market_products OWNER TO postgres;
+ALTER TABLE public.market_products OWNER TO CURRENT_USER;
 
 --
 -- Name: market_social_links; Type: TABLE; Schema: public; Owner: postgres
@@ -100,7 +100,7 @@ CREATE TABLE public.market_social_links (
 );
 
 
-ALTER TABLE public.market_social_links OWNER TO postgres;
+ALTER TABLE public.market_social_links OWNER TO CURRENT_USER;
 
 --
 -- Name: payment_methods; Type: TABLE; Schema: public; Owner: postgres
@@ -112,7 +112,7 @@ CREATE TABLE public.payment_methods (
 );
 
 
-ALTER TABLE public.payment_methods OWNER TO postgres;
+ALTER TABLE public.payment_methods OWNER TO CURRENT_USER;
 
 --
 -- Name: payment_methods_payment_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -127,7 +127,7 @@ CREATE SEQUENCE public.payment_methods_payment_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.payment_methods_payment_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.payment_methods_payment_id_seq OWNER TO CURRENT_USER;
 
 --
 -- Name: payment_methods_payment_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -146,7 +146,7 @@ CREATE TABLE public.products (
 );
 
 
-ALTER TABLE public.products OWNER TO postgres;
+ALTER TABLE public.products OWNER TO CURRENT_USER;
 
 --
 -- Name: products_product_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -161,7 +161,7 @@ CREATE SEQUENCE public.products_product_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.products_product_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.products_product_id_seq OWNER TO CURRENT_USER;
 
 --
 -- Name: products_product_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -185,7 +185,7 @@ CREATE TABLE public.reviews (
 );
 
 
-ALTER TABLE public.reviews OWNER TO postgres;
+ALTER TABLE public.reviews OWNER TO CURRENT_USER;
 
 --
 -- Name: reviews_review_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -200,7 +200,7 @@ CREATE SEQUENCE public.reviews_review_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.reviews_review_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.reviews_review_id_seq OWNER TO CURRENT_USER;
 
 --
 -- Name: reviews_review_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -219,7 +219,7 @@ CREATE TABLE public.social_networks (
 );
 
 
-ALTER TABLE public.social_networks OWNER TO postgres;
+ALTER TABLE public.social_networks OWNER TO CURRENT_USER;
 
 --
 -- Name: social_networks_social_network_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -234,7 +234,7 @@ CREATE SEQUENCE public.social_networks_social_network_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.social_networks_social_network_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.social_networks_social_network_id_seq OWNER TO CURRENT_USER;
 
 --
 -- Name: social_networks_social_network_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
