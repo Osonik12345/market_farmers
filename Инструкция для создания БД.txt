@@ -3,11 +3,11 @@
 
 Шаг 2: Создайте базу данных
 Откройте psql или pgAdmin и выполните:
-CREATE DATABASE itmo_farmers OWNER postgres;
+CREATE DATABASE itmo_farmers OWNER <ваш_пользователь>;
 
 Шаг 3: Восстановите из SQL-файла
 В терминале (в папке с файлом itmo_farmers_backup.sql):
-psql -U postgres -d itmo_farmers -f itmo_farmers_backup.sql
+psql -U <ваш_пользователь> -d itmo_farmers -f itmo_farmers_backup.sql
 
 Шаг 4: Проверьте
-psql -U postgres -d itmo_farmers -c "SELECT COUNT(*) FROM farmers_markets;"
+psql -U <ваш_пользователь> -d itmo_farmers -c "SELECT COUNT(*) FROM farmers_markets;"
